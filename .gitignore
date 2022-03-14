@@ -1,3 +1,4 @@
 target
 .devcontainer.json
 .keep
+*.txt
