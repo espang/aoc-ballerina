@@ -1,6 +1,8 @@
 import ballerina/io;
 import aoc.day1;
 import aoc.day2;
+import aoc.day3;
+import aoc.day4;
 
 public function main() {
     io:println("Hello, World!");
@@ -10,6 +12,16 @@ public function main() {
     }
 
     err = day2:solve();
+    if err is error {
+        io:println(`error is ${err}`);
+    }
+
+    err = day3:solve();
+    if err is error {
+        io:println(`error is ${err}`);
+    }
+
+    err = day4:solve();
     if err is error {
         io:println(`error is ${err}`);
     }

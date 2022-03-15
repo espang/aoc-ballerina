@@ -18,7 +18,6 @@ function countIncreases(int[] numbers) returns int {
 }
 
 function slidingWindow(int[] numbers) returns int[] {
-    int index = 0;
     if numbers.length() < 3 {
         return [];
     }
