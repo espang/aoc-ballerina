@@ -3,6 +3,7 @@ import aoc.day1;
 import aoc.day2;
 import aoc.day3;
 import aoc.day4;
+import aoc.day5;
 
 public function main() {
     io:println("Hello, World!");
@@ -22,6 +23,11 @@ public function main() {
     }
 
     err = day4:solve();
+    if err is error {
+        io:println(`error is ${err}`);
+    }
+
+    err = day5:solve();
     if err is error {
         io:println(`error is ${err}`);
     }
