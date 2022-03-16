@@ -93,7 +93,8 @@ modules = [
 	{org = "eike", packageName = "aoc", moduleName = "aoc.day5"},
 	{org = "eike", packageName = "aoc", moduleName = "aoc.day6"},
 	{org = "eike", packageName = "aoc", moduleName = "aoc.day7"},
-	{org = "eike", packageName = "aoc", moduleName = "aoc.day8"}
+	{org = "eike", packageName = "aoc", moduleName = "aoc.day8"},
+	{org = "eike", packageName = "aoc", moduleName = "aoc.day9"}
 ]
 
 
