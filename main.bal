@@ -1,4 +1,5 @@
 import ballerina/io;
+
 import aoc.day1;
 import aoc.day2;
 import aoc.day3;
@@ -6,40 +7,23 @@ import aoc.day4;
 import aoc.day5;
 import aoc.day6;
 import aoc.day7;
+import aoc.day8;
+
+configurable int DAY = ?;
 
 public function main() {
-    io:println("Hello, World!");
-    error? err = day1:solve();
-    if err is error {
-        io:println(`error is ${err}`);
+    error? err = ();
+    match DAY {
+        1 => {err = day1:solve();}
+        2 => {err = day2:solve();}
+        3 => {err = day3:solve();}
+        4 => {err = day4:solve();}
+        5 => {err = day5:solve();}
+        6 => {err = day6:solve();}
+        7 => {err = day7:solve();}
+        8 => {err = day8:solve();}
+        _ => {err = error("unsupported type, use number between 1 and 8");}
     }
-
-    err = day2:solve();
-    if err is error {
-        io:println(`error is ${err}`);
-    }
-
-    err = day3:solve();
-    if err is error {
-        io:println(`error is ${err}`);
-    }
-
-    err = day4:solve();
-    if err is error {
-        io:println(`error is ${err}`);
-    }
-
-    err = day5:solve();
-    if err is error {
-        io:println(`error is ${err}`);
-    }
-
-    err = day6:solve();
-    if err is error {
-        io:println(`error is ${err}`);
-    }
-
-    err = day7:solve();
     if err is error {
         io:println(`error is ${err}`);
     }
