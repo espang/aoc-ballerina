@@ -9,6 +9,7 @@ import aoc.day6;
 import aoc.day7;
 import aoc.day8;
 import aoc.day9;
+import aoc.day10;
 
 configurable int DAY = ?;
 
@@ -24,7 +25,8 @@ public function main() {
         7 => {err = day7:solve();}
         8 => {err = day8:solve();}
         9 => {err = day9:solve();}
-        _ => {err = error("unsupported type, use number between 1 and 9");}
+        10 => {err = day10:solve();}
+        _ => {err = error("unsupported type, use number between 1 and 10");}
     }
     if err is error {
         io:println(`error is ${err}`);

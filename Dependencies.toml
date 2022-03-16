@@ -87,6 +87,7 @@ dependencies = [
 modules = [
 	{org = "eike", packageName = "aoc", moduleName = "aoc"},
 	{org = "eike", packageName = "aoc", moduleName = "aoc.day1"},
+	{org = "eike", packageName = "aoc", moduleName = "aoc.day10"},
 	{org = "eike", packageName = "aoc", moduleName = "aoc.day2"},
 	{org = "eike", packageName = "aoc", moduleName = "aoc.day3"},
 	{org = "eike", packageName = "aoc", moduleName = "aoc.day4"},
